@@ -62,14 +62,6 @@ const Navigation = () => {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <Link to="/services" className="text-sm font-body text-foreground/80 hover:text-foreground transition-colors">
-              Layanan
-            </Link>
-
-            <Link to="/about" className="text-sm font-body text-foreground/80 hover:text-foreground transition-colors">
-              Tentang
-            </Link>
-
             <Button asChild variant="default" size="sm" className="bg-primary hover:bg-primary/90">
               <Link to="/contact">Kontak</Link>
             </Button>
@@ -112,22 +104,6 @@ const Navigation = () => {
                   ))}
                 </div>
               </div>
-
-              <Link
-                to="/services"
-                className="text-sm font-body text-foreground/80 hover:text-foreground transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Layanan
-              </Link>
-
-              <Link
-                to="/about"
-                className="text-sm font-body text-foreground/80 hover:text-foreground transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Tentang
-              </Link>
 
               <Button asChild variant="default" size="sm" className="bg-primary hover:bg-primary/90 w-full">
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
