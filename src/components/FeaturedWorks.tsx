@@ -7,7 +7,7 @@ const featuredProjects = [
     title: "Executive Menswear Line",
     category: "Menswear",
     year: "2024",
-    image: "placeholder",
+    image: "/img/project1.jpg",
     slug: "executive-menswear",
   },
   {
@@ -15,7 +15,7 @@ const featuredProjects = [
     title: "Urban Sportswear Collection",
     category: "Sportswear",
     year: "2024",
-    image: "placeholder",
+    image: "/img/project2.jpg",
     slug: "urban-sportswear",
   },
   {
@@ -23,7 +23,7 @@ const featuredProjects = [
     title: "Contemporary Womenswear",
     category: "Womenswear",
     year: "2023",
-    image: "placeholder",
+    image: "/img/project3.jpg",
     slug: "contemporary-womenswear",
   },
 ];
@@ -48,8 +48,12 @@ const FeaturedWorks = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <Card className="overflow-hidden bg-card border-border hover:border-primary transition-all duration-500 h-[400px] relative">
-                {/* Placeholder gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-muted/30 via-card to-primary/10 group-hover:scale-105 transition-transform duration-500" />
+                {/* Image background */}
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
